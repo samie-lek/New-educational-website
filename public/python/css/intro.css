@@ -1,0 +1,136 @@
+.header {
+    background-image: url(../images/python.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clear: both;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+.what-python,
+.syntax-python  {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 75%;
+}
+
+.do-info>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .what-python {
+        width: 100%;
+    }
+}
+
+.image-left {
+    width: 30rem;
+    grid-row: span 2;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .image-left {
+        width: 15rem;
+    }
+
+    .image-left {
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+
+.what-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.image-right {
+    width: 30rem;
+    grid-row: span 2;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .image-right {
+        width: 15rem;
+    }
+
+    .image-right {
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+
+.why-python {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%
+}
+
+.why-info>h2 {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .why-python {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .syntax-python {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.placeholder {
+    height: 25vh;
+    visibility: hidden;
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    height: 25vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
